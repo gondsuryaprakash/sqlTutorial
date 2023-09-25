@@ -117,5 +117,41 @@ This command will show the column name and datatype of the column.
 ```sql
     Insert into tableName(prop1, prop2) Values  ("val1", "val2");
     -- Example 
-    Insert into student(Id, name, age) values(1,"Jon",2);
+    Insert into student(Id, name, age) values (1,"Jon",2);
+
+    -- Insert Multiples values 
+
+    Insert into student(Id, name, age) values (1,"Jon",2),(2,"Bob",3),,(3,"Insta",4); 
+```
+
+- Select Command
+
+```sql
+    select * from table_Name;
+
+    -- to select specific columns
+    
+    select col1, col2, col3 from tableName;
+```
+
+##### Constraint in SQL 
+
+ - NOT NULL
+
+ ```sql
+ 
+ create table tableName(prop1 type not null, prop2 type not null); 
+
+ -- example
+
+ create table student(name varchar(20) not null, age int not null);
+ 
+ ``` 
+
+ - DEFAULT 
+
+    It is used to give the default value of the column
+```sql
+create table student(name varchar(20) defualt 'surya' not null, age int not null);
+
 ```
